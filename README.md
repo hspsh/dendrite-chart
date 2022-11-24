@@ -1,6 +1,6 @@
 # dendrite
 
-![Version: 6.4.2](https://img.shields.io/badge/Version-6.4.2-informational?style=flat-square) ![AppVersion: v0.10.3](https://img.shields.io/badge/AppVersion-v0.10.3-informational?style=flat-square)
+![Version: 6.4.3](https://img.shields.io/badge/Version-6.4.3-informational?style=flat-square) ![AppVersion: v0.10.5](https://img.shields.io/badge/AppVersion-v0.10.5-informational?style=flat-square)
 
 Dendrite Matrix Homeserver
 
@@ -231,6 +231,7 @@ For more information see:
 | syncapi.config.search.index_path | string | `/var/dendrite/searchindex` | Where to store search index |
 | syncapi.config.search.language | string | `en` | Indexing language |
 | userapi | object | values.yaml | Configure the User API For more information see [the sample dendrite configuration](https://github.com/matrix-org/dendrite/blob/main/dendrite-sample.polylith.yaml) |
+| userapi.config.auto_join_rooms | list | `[]` | Automatically join users registered on this homeserver to following rooms |
 | userapi.config.bcrypt_cost | int | 10 | bcrypt cost (2^[cost] = rounds) |
 | userapi.database | object | See values.yaml | Override general dendrite.database parameters. |
 | userapi.database.conn_max_lifetime | string | dendrite.database.conn_max_lifetime | Maximum connection lifetime |
