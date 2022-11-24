@@ -1,10 +1,10 @@
 # dendrite
 
-![Version: 6.3.1](https://img.shields.io/badge/Version-6.3.1-informational?style=flat-square) ![AppVersion: v0.9.4](https://img.shields.io/badge/AppVersion-v0.9.4-informational?style=flat-square)
+![Version: 6.3.1](https://img.shields.io/badge/Version-6.3.1-informational?style=flat-square) ![AppVersion: v0.9.7](https://img.shields.io/badge/AppVersion-v0.9.7-informational?style=flat-square)
 
 Dendrite Matrix Homeserver
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/k8s-at-home/charts/issues/new/choose)**
+**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/hspsh/dendrite-chart/issues/new/choose)**
 
 ## Source Code
 
@@ -226,6 +226,9 @@ For more information see:
 | syncapi.image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | syncapi.image.repository | string | `"matrixdotorg/dendrite-polylith"` | image repository |
 | syncapi.image.tag | string | chart.appVersion | image tag |
+| syncapi.config.fulltext.enabled | bool | `false` | Fulltext indexing using [Bleve](https://github.com/blevesearch/bleve) |
+| syncapi.config.fulltext.index_path | string | `/var/dendrite/fulltextindex` | Where to store fulltext index |
+| syncapi.config.fulltext.language | string | `en` | Indexing langaue |
 | userapi | object | values.yaml | Configure the User API For more information see [the sample dendrite configuration](https://github.com/matrix-org/dendrite/blob/main/dendrite-sample.polylith.yaml) |
 | userapi.config.bcrypt_cost | int | 10 | bcrypt cost (2^[cost] = rounds) |
 | userapi.database | object | See values.yaml | Override general dendrite.database parameters. |
@@ -244,10 +247,6 @@ For more information see:
 #### Added
 
 N/A
-
-#### Changed
-
-* Upgraded dendrite to 0.9.4
 
 #### Fixed
 
