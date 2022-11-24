@@ -68,13 +68,6 @@ stringData:
         listen: http://0.0.0.0:{{ .Values.appserviceapi.service.main.ports.internal.port }}
         connect: http://{{ include "common.names.fullname" (index $.Subcharts "appserviceapi") }}:{{ .Values.appserviceapi.service.main.ports.internal.port }}
       {{- end }}
-      {{- if $componentSpecificDatabaseConfig }}
-      database:
-        connection_string: {{ default (print $connectionString "dendrite_appservice?sslmode=disable") .Values.appserviceapi.database.connection_string }}
-        max_open_conns: {{ default .Values.dendrite.database.max_open_conns .Values.appserviceapi.database.max_open_conns }}
-        max_idle_conns: {{ default .Values.dendrite.database.max_idle_conns .Values.appserviceapi.database.max_idle_conns }}
-        conn_max_lifetime: {{ default .Values.dendrite.database.conn_max_lifetime .Values.appserviceapi.database.conn_max_lifetime }}
-      {{- end }}
       config_files: {{- toYaml .Values.appserviceapi.config.config_files | nindent 8 }}
     client_api:
       {{- if .Values.dendrite.polylithEnabled }}
