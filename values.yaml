@@ -46,9 +46,9 @@ ingress:
 # -- Configure persistence settings for the chart under this key.
 # @default -- See values.yaml
 persistence:
-  fulltext:
+  search:
     enabled: false
-    mountPath: &fulltextPath /var/dendrite/fulltextindex
+    mountPath: &searchPath /var/dendrite/searchindex
     accessMode: ReadWriteOnce
     size: 5Gi
   media:
@@ -335,9 +335,9 @@ syncapi:
     # @default -- dendrite.database.conn_max_lifetime
     conn_max_lifetime: null
   config:
-   fulltext:
+   search:
      enabled: "false"
-     index_path: *fulltextPath
+     index_path: *searchPath
      language: "en" # more possible languages can be found at https://github.com/blevesearch/bleve/tree/master/analysis/lang
 
 # -- Configure the Room Server
