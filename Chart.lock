@@ -1,0 +1,36 @@
+dependencies:
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.5.2
+- name: postgresql
+  repository: https://charts.bitnami.com/bitnami
+  version: 11.6.21
+- name: nats
+  repository: https://nats-io.github.io/k8s/helm/charts/
+  version: 0.17.1
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.5.2
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.5.2
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.5.2
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.5.2
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.5.2
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.5.2
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.5.2
+- name: common
+  repository: https://library-charts.k8s-at-home.com
+  version: 4.5.2
+digest: sha256:4b372f888750c590718143c9280c3f6283b5edc0498d000b73e96423967e4d67
+generated: "2022-11-05T21:11:57.029148484+01:00"
