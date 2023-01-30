@@ -1,9 +1,9 @@
 ---
 apiVersion: v2
-appVersion: v0.10.8
+appVersion: v0.11.0
 description: Dendrite Matrix Homeserver
 name: dendrite
-version: 6.4.5
+version: 6.4.7
 kubeVersion: ">=1.16.0-0"
 keywords:
   - dendrite

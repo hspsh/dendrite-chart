@@ -1,6 +1,6 @@
 # dendrite
 
-![Version: 6.4.5](https://img.shields.io/badge/Version-6.4.5-informational?style=flat-square) ![AppVersion: v0.10.8](https://img.shields.io/badge/AppVersion-v0.10.8-informational?style=flat-square)
+![Version: 6.4.7](https://img.shields.io/badge/Version-6.4.7-informational?style=flat-square) ![AppVersion: v0.11.0](https://img.shields.io/badge/AppVersion-v0.11.0-informational?style=flat-square)
 
 Dendrite Matrix Homeserver
 
@@ -215,6 +215,7 @@ For more information see:
 | roomserver.image.pullPolicy | string | `"IfNotPresent"` | image pull policy |
 | roomserver.image.repository | string | `"matrixdotorg/dendrite-polylith"` | image repository |
 | roomserver.image.tag | string | chart.appVersion | image tag |
+| podSecurityContext | object | `{}` | `securityContext` to apply to all pods |
 | service | object | See values.yaml | If added dendrite will start a HTTP and HTTPS listener args:   - "--tls-cert=server.crt"   - "--tls-key=server.key" -- Configures service settings for the chart. |
 | service.main.ports.http | object | See values.yaml | Configures the default HTTP listener for dendrite |
 | service.main.ports.https | object | See values.yaml | Configures the HTTPS listener for dendrite |
