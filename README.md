@@ -1,6 +1,6 @@
 # dendrite
 
-![Version: 6.4.7](https://img.shields.io/badge/Version-6.4.7-informational?style=flat-square) ![AppVersion: v0.11.0](https://img.shields.io/badge/AppVersion-v0.11.0-informational?style=flat-square)
+![Version: 6.4.8](https://img.shields.io/badge/Version-6.4.8-informational?style=flat-square) ![AppVersion: v0.11.1](https://img.shields.io/badge/AppVersion-v0.11.1-informational?style=flat-square)
 
 Dendrite Matrix Homeserver
 
