@@ -4,7 +4,10 @@
 
 Dendrite Matrix Homeserver
 
-**This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/hspsh/dendrite-chart/issues/new/choose)**
+**Dendrite removed polylith model in https://github.com/matrix-org/dendrite/commit/11d9b9db0e96c51c1430d451d23cf5ae9f36e4ee, therefore this chart lost the reason to exist**
+
+
+This chart is not maintained by the upstream project and any issues with the chart should be raised [here](https://github.com/hspsh/dendrite-chart/issues/new/choose)
 
 ## Source Code
 
